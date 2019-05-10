@@ -1,0 +1,33 @@
+.history {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: -webkit-xxx-large;
+    height: 100px;
+    width: 100%;
+    background-color: orange;
+    border: 1px solid black;
+}
+.img1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+
+}
+.img2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    margin-top: 50px;
+}
+.img2 img {
+    height: 350px;
+    width: 600px;
+}
+.footer1 {
+    height: 100px;
+    width: 100%;
+    background-color: orange;
+    border: 1px solid black;
+
+}

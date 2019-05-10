@@ -1,0 +1,326 @@
+.main-container {
+    margin: 0 auto;
+    background-color: lightgray;
+}
+
+
+#header > div > i {
+    height: 75px;
+    width: 75px;
+    font-size: 50px;
+    transition: height 0.4s;
+}
+.color {
+    background: orange !important;
+    top: 0%;
+    width: 100%;
+    z-index: 20;
+    position: fixed !important;
+    height: 9% !important;
+    width: 99% !important;
+    color: black;
+
+}
+.color1 {
+  color: rgb(0, 0, 0) !important;
+
+}
+.store {
+  text-decoration: none;
+  color: white;
+}
+.history {
+  text-decoration: none;
+  color: white;
+}
+.movie {
+  text-decoration: none;
+  color: white;
+}
+.game {
+  text-decoration: none;
+  color: white;
+}
+
+.background {
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+}
+#video-bg {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-bottom-right-radius:  100px;
+    border-bottom-left-radius:  100px;
+
+}
+.pic {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 25px;
+}
+.pic img {
+  height: 250px;
+  width: 300px;
+  border-radius: 15px;
+  
+}
+.pic img:hover {
+    filter: grayscale(100%);
+    transform: scale(1.3);
+}
+.span {
+  color: gray;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Open Sans", sans-serif;
+    background: #374954;
+    color: white;
+    text-align: center;
+  }
+  
+  #main {
+    position: relative;
+    list-style: none;
+    background: grey;
+    font-weight: 400;
+    font-size: 0;
+    text-transform: uppercase;
+    width: 100%;
+    height: 15%;
+    border: 2px solid black;
+  }
+  #main li {
+    font-size: 0.8rem;
+    display: inline-block;
+    position: relative;
+    padding: 15px 20px;
+    cursor: pointer;
+    z-index: 5;
+    min-width: 120px;
+  }
+  
+  li {
+    margin: 0;
+  }
+  
+  .drop {
+    overflow: hidden;
+    list-style: none;
+    position: absolute;
+    padding: 0;
+    width: 100%;
+    left: 0;
+    top: 48px;
+  }
+  .drop div {
+    -webkit-transform: translate(0, -100%);
+    -moz-transform: translate(0, -100%);
+    -ms-transform: translate(0, -100%);
+    transform: translate(0, -100%);
+    -webkit-transition: all 0.5s 0.1s;
+    -moz-transition: all 0.5s 0.1s;
+    -ms-transition: all 0.5s 0.1s;
+    transition: all 0.5s 0.1s;
+    position: relative;
+  }
+  .drop li {
+    display: block;
+    padding: 0;
+    width: 100%;
+    border: 1px solid black;
+    background: grey !important;
+  }
+  
+  #marker {
+    height: 6px;
+    background: lightgrey !important;
+    position: absolute;
+    bottom: 0;
+    right: 60.3%;
+    width: 100px;
+    z-index: 2;
+    border: 1px solid black;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -ms-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+  
+  #main li:nth-child(1):hover ul div {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  #main li:nth-child(1):hover ~ #marker {
+    -webkit-transform: translate(0px, 0);
+    -moz-transform: translate(0px, 0);
+    -ms-transform: translate(0px, 0);
+    transform: translate(0px, 0);
+  }
+  
+  #main li:nth-child(2):hover ul div {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  #main li:nth-child(2):hover ~ #marker {
+    -webkit-transform: translate(120px, 0);
+    -moz-transform: translate(120px, 0);
+    -ms-transform: translate(120px, 0);
+    transform: translate(120px, 0);
+  }
+  
+  #main li:nth-child(3):hover ul div {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  #main li:nth-child(3):hover ~ #marker {
+    -webkit-transform: translate(240px, 0);
+    -moz-transform: translate(240px, 0);
+    -ms-transform: translate(240px, 0);
+    transform: translate(240px, 0);
+  }
+  
+  #main li:nth-child(4):hover ul div {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  #main li:nth-child(4):hover ~ #marker {
+    -webkit-transform: translate(360px, 0);
+    -moz-transform: translate(360px, 0);
+    -ms-transform: translate(360px, 0);
+    transform: translate(360px, 0);
+  }
+ 
+  
+  .btn {
+    border-radius: 2px;
+    padding: 8px 12px;
+    color: #D18B49;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s ease;
+  }
+  
+  .card {
+    background: #FFFFFF;
+    height: 40%;
+    width: 60%;
+    margin: 100px auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    box-sizing: border-box;
+    padding: 48px;
+    text-align: center;
+  }
+  
+  .products {
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s ease;
+    height: 300px;
+    
+  }
+  
+  .product {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 68px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease;
+    height: 100%;
+    width: 100%;
+    right: 0;
+  }
+  .product.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .thumbnail {
+    height: 400px;
+    width: 500px;
+  }
+  body > div > div.card > div.products > div.product.active > div > img {
+    width: 80%;
+  
+  }
+  
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 -12px -12px;
+  }
+  
+  [ripple] {
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+  }
+  [ripple] .ripple {
+    position: absolute;
+    background: #FFFFFF;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-animation: ripple 2s;
+            animation: ripple 2s;
+  }
+  
+  @-webkit-keyframes ripple {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 0.2;
+    }
+    100% {
+      -webkit-transform: scale(20);
+              transform: scale(20);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes ripple {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 0.2;
+    }
+    100% {
+      -webkit-transform: scale(20);
+              transform: scale(20);
+      opacity: 0;
+    }
+  }
+  .footer-one {
+    height: 100px;
+    width: 100%;
+    background-color: gray;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 30px;
+  }
